@@ -22,7 +22,7 @@
 
 {
     'name': 'Whatsapp Floating Icon in Website',
-    'version': '14.0.1.0.0',
+    'version': '15.0.1.1.1',
     'category': 'Extra Tools',
     'summary': """Whatsapp Floating Icon in Website""",
     'description': """Whatsapp Floating Icon in Website, Website Floating WhatsApp Icon, Whatsapp Odoo Website,Whatsapp Odoo Coonector, Whatsapp website, Whatsapp""",
@@ -32,11 +32,15 @@
     'maintainer': 'Cybrosys Techno Solutions',
     'depends': ['website'],
     'data': [
-        'views/asset.xml',
         'views/portal_whatsapp_view.xml',
         'views/website_inherited.xml',
     ],
     'images': ['static/description/banner.png'],
+    'assets': {
+        'web.assets_frontend': [
+            '/website_floating_whatsapp_icon/static/src/css/whatsapp.css',
+        ],
+    },
     'license': 'LGPL-3',
     'installable': True,
     'auto_install': False,
